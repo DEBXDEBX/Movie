@@ -71,6 +71,7 @@ input {
   text-align: center;
   padding: 7px;
     color: white;
+      border-radius: 10px;
 }
 #calculateButton:hover {
     background-color: #503073;
