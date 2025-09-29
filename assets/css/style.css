@@ -52,6 +52,7 @@ p {
 input {
   text-align: center;
      margin: 7px;
+      border-radius: 5px;
     }
 .input {
   display: flex;
