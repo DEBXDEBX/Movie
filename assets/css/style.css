@@ -20,14 +20,63 @@ a {
 /* Create Variables */
 :root {
   --primary-color: #0f0;
-  --secondary-color: #00f;
+  --secondary-color: rgb(1, 1, 13);
 }
 /* use Variables */
 h1 {
   color: var(--primary-color);
+    color: white;
   text-shadow: 2px 2px var(--secondary-color);
+   text-align: center;
+     margin: 7px;
 }
+ html{
+    background-color: blue;
+ }
 #showTimeDiv, #movieLengthDiv, #previewLengthDiv{
   display:flex;
+  flex-direction: column;
+    /* border: 2px solid black; Sets a 2px wide, solid, black border  */
+    margin: 20px;
+} 
+#mainDiv {
+    max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: blue;
+}
+p {
+  margin: 7px;
+  color: white;
+}
+input {
+  text-align:right;
+     margin: 7px;
+    }
+.input {
+  display: flex;
   flex-direction: row;
+}
+.fake{
+  visibility: hidden;
+}
+#calculateButton {
+    display: block;
+  width: 100%;
+  border: 2px solid white; 
+  background-color: #7a1fd9;
+  padding: 14px 28px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+  padding: 7px;
+    color: white;
+}
+#calculateButton:hover {
+    background-color: #503073;
+}
+#endTimeOutput {
+  margin: 15px;
+   text-align: center;
+  font-size: 33px;
 }

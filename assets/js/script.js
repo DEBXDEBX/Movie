@@ -50,14 +50,11 @@ calculateButton.addEventListener("click", (e) => {
 
 // output
 
-console.log("show ends");
 
 if(totalMinutes < 10){
 totalMinutes = '0' +totalMinutes;
 }
 
-console.log(totalHours);
-console.log(totalMinutes);
 
 endTimeOutput.innerHTML = `<p> Movie ends at ${totalHours}:${totalMinutes}</p>`;
 
