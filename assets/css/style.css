@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
 }
+
 /* Main Styling */
 html,
 body {
@@ -25,19 +26,21 @@ a {
 h1 {
   color: var(--primary-color);
   color: white;
-   text-shadow: 2px 2px var(--secondary-color);
-   text-align: center;
-   margin-top: 25px;
+  text-shadow: 2px 2px var(--secondary-color);
+  text-align: center;
+  margin-top: 25px;
 }
- html{
-    background-image: linear-gradient(to bottom, blue, rgb(83, 90, 164));
-    height: 100%;
- }
-#showTimeDiv, #movieLengthDiv, #previewLengthDiv{
-  display:flex;
+html {
+  background-image: linear-gradient(to bottom, blue, rgb(83, 90, 164));
+  height: 100%;
+}
+#showTimeDiv,
+#movieLengthDiv,
+#previewLengthDiv {
+  display: flex;
   flex-direction: column;
   margin: 20px;
-} 
+}
 #mainDiv {
   max-width: fit-content;
   margin-left: auto;
@@ -56,13 +59,13 @@ input {
   display: flex;
   flex-direction: row;
 }
-.fake{
+.fake {
   visibility: hidden;
 }
 #calculateButton {
   display: block;
   width: 100%;
-  border: 2px solid white; 
+  border: 2px solid white;
   background-color: #741cc5;
   padding: 14px 28px;
   font-size: 25px;
@@ -73,7 +76,7 @@ input {
   border-radius: 10px;
 }
 #calculateButton:hover {
- background-color: #503073;
+  background-color: #503073;
 }
 #endTimeOutput {
   margin: 15px;

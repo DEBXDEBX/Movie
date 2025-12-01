@@ -10,65 +10,100 @@
     <meta name="description" content="This is my website description" />
     <meta name="keywords" content="web development, web design" />
 
-  
     <!-- My CSS File -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-        <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <title>Movie Calculator</title>
   </head>
   <body>
     <h1>Movie Calculator</h1>
 
     <div id="mainDiv">
- <div>
-      <div id="showTimeDiv">
-        <P>Show Time</P>
-       <div class="input">
-        <input type="number" id="showTimeHour" name="tentacles" min="1" max="12" />
-        <P>Hour's</P>
-          <input type="number" id="showTimeMinute" name="tentacles" min="0" max="59"/>
-        <P>Minute's</P>
-</div>
-    </div>
-</div>
-
-<div>
- <div id="movieLengthDiv">
-  <P>Movie Length</P>
-    <div class="input">
-        <input type="number" id="movieLengthHour" name="tentacles" min="1" max="12" />
-        <P>Hour's</P>
-           <input type="number" id="movieLengthMinute" name="tentacles" min="0" max="59" />
-        <P>Minute's</P>
+      <div>
+        <div id="showTimeDiv">
+          <p>Show Time</p>
+          <div class="input">
+            <input
+              type="number"
+              id="showTimeHour"
+              name="tentacles"
+              min="1"
+              max="12"
+            />
+            <p>Hour's</p>
+            <input
+              type="number"
+              id="showTimeMinute"
+              name="tentacles"
+              min="0"
+              max="59"
+            />
+            <p>Minute's</p>
+          </div>
+        </div>
       </div>
-      </div>
-</div>
 
-  <div>
- <div id="previewLengthDiv">
-  <P>Preview Length</P>
-        <div class="input">
-    <!-- Fake input for space -->
-           <input type="number" class="fake"  id="fake" name="tentacles" min="1" max="12"/>
-        <P class="fake">Hour's</P>
-    <!-- Fake End-->
-           <input type="number" id="previewLengthMinute" name="tentacles" min="0" max="59" value="28"/>
-        <P>Minute's</P>
+      <div>
+        <div id="movieLengthDiv">
+          <p>Movie Length</p>
+          <div class="input">
+            <input
+              type="number"
+              id="movieLengthHour"
+              name="tentacles"
+              min="1"
+              max="12"
+            />
+            <p>Hour's</p>
+            <input
+              type="number"
+              id="movieLengthMinute"
+              name="tentacles"
+              min="0"
+              max="59"
+            />
+            <p>Minute's</p>
+          </div>
+        </div>
       </div>
-</div>
-</div>
 
-<div id="endTimeOutput"></div>
+      <div>
+        <div id="previewLengthDiv">
+          <p>Preview Length</p>
+          <div class="input">
+            <!-- Fake input for space -->
+            <input
+              type="number"
+              class="fake"
+              id="fake"
+              name="tentacles"
+              min="1"
+              max="12"
+            />
+            <p class="fake">Hour's</p>
+            <!-- Fake End-->
+            <input
+              type="number"
+              id="previewLengthMinute"
+              name="tentacles"
+              min="0"
+              max="59"
+              value="28"
+            />
+            <p>Minute's</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="endTimeOutput"></div>
 
       <div>
         <button id="calculateButton">Calculate Movie End Time</button>
       </div>
-
-
-      
     </div>
+
     <!-- My JavaScript File -->
-       <script type="text/javascript" src="assets/js/elements.js"></script>
+    <script type="text/javascript" src="assets/js/elements.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
   </body>
 </html>
