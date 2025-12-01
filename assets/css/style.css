@@ -16,7 +16,6 @@ a {
   text-decoration: none;
 }
 
-/* rem = ?px / RootPx        ==>32px /16rootpx == 2 rem */
 /* Create Variables */
 :root {
   --primary-color: #0f0;
@@ -25,25 +24,24 @@ a {
 /* use Variables */
 h1 {
   color: var(--primary-color);
-    color: white;
-  text-shadow: 2px 2px var(--secondary-color);
+  color: white;
+   text-shadow: 2px 2px var(--secondary-color);
    text-align: center;
-     margin: 7px;
+   margin-top: 25px;
 }
  html{
-    background-color: blue;
+    background-image: linear-gradient(to bottom, blue, rgb(83, 90, 164));
+    height: 100%;
  }
 #showTimeDiv, #movieLengthDiv, #previewLengthDiv{
   display:flex;
   flex-direction: column;
-    /* border: 2px solid black; Sets a 2px wide, solid, black border  */
-    margin: 20px;
+  margin: 20px;
 } 
 #mainDiv {
-    max-width: fit-content;
+  max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  background-color: blue;
 }
 p {
   margin: 7px;
@@ -51,9 +49,9 @@ p {
 }
 input {
   text-align: center;
-     margin: 7px;
-      border-radius: 5px;
-    }
+  margin: 7px;
+  border-radius: 5px;
+}
 .input {
   display: flex;
   flex-direction: row;
@@ -62,23 +60,23 @@ input {
   visibility: hidden;
 }
 #calculateButton {
-    display: block;
+  display: block;
   width: 100%;
   border: 2px solid white; 
-  background-color: #7a1fd9;
+  background-color: #741cc5;
   padding: 14px 28px;
   font-size: 25px;
   cursor: pointer;
   text-align: center;
   padding: 7px;
-    color: white;
-      border-radius: 10px;
+  color: white;
+  border-radius: 10px;
 }
 #calculateButton:hover {
-    background-color: #503073;
+ background-color: #503073;
 }
 #endTimeOutput {
   margin: 15px;
-   text-align: center;
+  text-align: center;
   font-size: 33px;
 }
