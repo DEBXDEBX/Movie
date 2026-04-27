@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -15,12 +15,14 @@
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <title>Movie Calculator</title>
   </head>
+
   <body>
     <h1>Movie Calculator</h1>
 
     <div id="mainDiv">
       <div>
         <div id="showTimeDiv">
+          <input type="text" id="movieTitle" placeholder="Movie Title" />
           <p>Show Time</p>
           <div class="input">
             <input
@@ -99,6 +101,91 @@
 
       <div>
         <button id="calculateButton">Calculate Movie End Time</button>
+      </div>
+    </div>
+
+    <div id="mainDiv2">
+      <div>
+        <div id="showTimeDiv2">
+          <input type="text" id="movieTitle2" placeholder="Movie Title" />
+          <p>Show Time</p>
+          <div class="input">
+            <input
+              type="number"
+              id="showTimeHour2"
+              name="tentacles"
+              min="1"
+              max="12"
+            />
+            <p>Hour's</p>
+            <input
+              type="number"
+              id="showTimeMinute2"
+              name="tentacles"
+              min="0"
+              max="59"
+            />
+            <p>Minute's</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div id="movieLengthDiv">
+          <p>Movie Length</p>
+          <div class="input">
+            <input
+              type="number"
+              id="movieLengthHour2"
+              name="tentacles"
+              min="1"
+              max="12"
+            />
+            <p>Hour's</p>
+            <input
+              type="number"
+              id="movieLengthMinute2"
+              name="tentacles"
+              min="0"
+              max="59"
+            />
+            <p>Minute's</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div id="previewLengthDiv2">
+          <p>Preview Length</p>
+          <div class="input">
+            <!-- Fake input for space -->
+            <input
+              type="number"
+              class="fake"
+              id="fake2"
+              name="tentacles"
+              min="1"
+              max="12"
+            />
+            <p class="fake">Hour's</p>
+            <!-- Fake End-->
+            <input
+              type="number"
+              id="previewLengthMinute2"
+              name="tentacles"
+              min="0"
+              max="59"
+              value="28"
+            />
+            <p>Minute's</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="endTimeOutput2"></div>
+
+      <div>
+        <button id="calculateButton2">Calculate Movie End Time</button>
       </div>
     </div>
 

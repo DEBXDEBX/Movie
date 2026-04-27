@@ -31,17 +31,22 @@ h1 {
   margin-top: 25px;
 }
 html {
-  background-image: linear-gradient(to bottom, blue, rgb(83, 90, 164));
+  /* background-image: linear-gradient(to bottom, blue, rgb(83, 90, 164)); */
+  background-color: blue;
   height: 100%;
 }
 #showTimeDiv,
 #movieLengthDiv,
-#previewLengthDiv {
+#previewLengthDiv,
+#showTimeDiv2,
+#movieLengthDiv2,
+#previewLengthDiv2 {
   display: flex;
   flex-direction: column;
   margin: 20px;
 }
-#mainDiv {
+#mainDiv,
+#mainDiv2 {
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -62,7 +67,11 @@ input {
 .fake {
   visibility: hidden;
 }
-#calculateButton {
+/* #mainDiv2 {
+  margin: 100px;
+} */
+#calculateButton,
+#calculateButton2 {
   display: block;
   width: 100%;
   border: 2px solid white;
@@ -78,7 +87,11 @@ input {
 #calculateButton:hover {
   background-color: #503073;
 }
-#endTimeOutput {
+#calculateButton2:hover {
+  background-color: #503073;
+}
+#endTimeOutput,
+#endTimeOutput2 {
   margin: 15px;
   text-align: center;
   font-size: 33px;
