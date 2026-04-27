@@ -47,7 +47,9 @@ el.calculateButton.addEventListener("click", (e) => {
   if (el.movieTitle.value === "") {
     el.endTimeOutput.innerHTML = `<p> Movie ends at ${totalHours}:${totalMinutes}</p>`;
   } else {
-    el.endTimeOutput.innerHTML = `<p> ${el.movieTitle.value} ends at ${totalHours}:${totalMinutes}</p>`;
+    let str = el.movieTitle.value;
+    str = str.replace(/\b\w/g, (match) => match.toUpperCase());
+    el.endTimeOutput.innerHTML = `<p> ${str} ends at ${totalHours}:${totalMinutes}</p>`;
   }
 });
 
@@ -90,6 +92,9 @@ el.calculateButton2.addEventListener("click", (e) => {
   if (el.movieTitle2.value === "") {
     el.endTimeOutput2.innerHTML = `<p> Movie ends at ${totalHours}:${totalMinutes}</p>`;
   } else {
-    el.endTimeOutput2.innerHTML = `<p> ${el.movieTitle2.value} ends at ${totalHours}:${totalMinutes}</p>`;
+    let str = el.movieTitle2.value;
+    console.log(str);
+    str = str.replace(/\b\w/g, (match) => match.toUpperCase());
+    el.endTimeOutput2.innerHTML = `<p> ${str} ends at ${totalHours}:${totalMinutes}</p>`;
   }
 });

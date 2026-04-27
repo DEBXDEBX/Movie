@@ -45,8 +45,7 @@ html {
   flex-direction: column;
   margin: 20px;
 }
-#mainDiv,
-#mainDiv2 {
+#mainDiv {
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -67,9 +66,7 @@ input {
 .fake {
   visibility: hidden;
 }
-/* #mainDiv2 {
-  margin: 100px;
-} */
+
 #calculateButton,
 #calculateButton2 {
   display: block;
@@ -95,4 +92,8 @@ input {
   margin: 15px;
   text-align: center;
   font-size: 33px;
+}
+
+#showTimeDiv2 {
+  margin-top: 50px;
 }
