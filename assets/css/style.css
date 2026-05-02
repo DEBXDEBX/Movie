@@ -40,7 +40,16 @@ html {
 #previewLengthDiv,
 #showTimeDiv2,
 #movieLengthDiv2,
-#previewLengthDiv2 {
+#previewLengthDiv2,
+#showTimeDiv3,
+#movieLengthDiv3,
+#previewLengthDiv3,
+#showTimeDiv4,
+#movieLengthDiv4,
+#previewLengthDiv4,
+#showTimeDiv5,
+#movieLengthDiv5,
+#previewLengthDiv5 {
   display: flex;
   flex-direction: column;
   margin: 20px;
@@ -68,7 +77,10 @@ input {
 }
 
 #calculateButton,
-#calculateButton2 {
+#calculateButton2,
+#calculateButton3,
+#calculateButton4,
+#calculateButton5 {
   display: block;
   width: 100%;
   border: 2px solid white;
@@ -81,19 +93,27 @@ input {
   color: white;
   border-radius: 10px;
 }
-#calculateButton:hover {
+#calculateButton:hover,
+#calculateButton2:hover,
+#calculateButton3:hover,
+#calculateButton4:hover,
+#calculateButton5:hover {
   background-color: #503073;
 }
-#calculateButton2:hover {
-  background-color: #503073;
-}
+
 #endTimeOutput,
-#endTimeOutput2 {
+#endTimeOutput2,
+#endTimeOutput3,
+#endTimeOutput4,
+#endTimeOutput5 {
   margin: 15px;
   text-align: center;
   font-size: 33px;
 }
 
-#showTimeDiv2 {
+#showTimeDiv2,
+#showTimeDiv3,
+#showTimeDiv4,
+#showTimeDiv5 {
   margin-top: 50px;
 }
