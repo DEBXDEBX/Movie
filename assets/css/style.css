@@ -117,3 +117,44 @@ input {
 #showTimeDiv5 {
   margin-top: 50px;
 }
+
+#first {
+  background-color: #820ee8;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#second {
+  background-color: #ff008b;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#third {
+  background-color: #2de11d;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#forth {
+  background-color: #ee82ee;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#fifth {
+  background-color: #ffa500;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btnDiv {
+  margin: 10px;
+}

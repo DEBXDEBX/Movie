@@ -24,428 +24,435 @@
     <h1>Movie Calculator</h1>
 
     <div id="mainDiv">
-      <div>
-        <div id="showTimeDiv">
-          <input type="text" id="movieTitle" placeholder="Movie Title" />
-          <p>Show Time</p>
-          <div class="input">
-            <input
-              type="number"
-              id="showTimeHour"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p>Hour's</p>
-            <input
-              type="number"
-              id="showTimeMinute"
-              name="tentacles"
-              min="0"
-              max="59"
-            />
-            <p>Minute's</p>
+      <div id="first">
+        <div>
+          <div id="showTimeDiv">
+            <input type="text" id="movieTitle" placeholder="Movie Title" />
+            <p>Show Time</p>
+            <div class="input">
+              <input
+                type="number"
+                id="showTimeHour"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p>Hour's</p>
+              <input
+                type="number"
+                id="showTimeMinute"
+                name="tentacles"
+                min="0"
+                max="59"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div id="movieLengthDiv">
-          <p>Movie Length</p>
-          <div class="input">
-            <input
-              type="number"
-              id="movieLengthHour"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p>Hour's</p>
-            <input
-              type="number"
-              id="movieLengthMinute"
-              name="tentacles"
-              min="0"
-              max="59"
-            />
-            <p>Minute's</p>
+        <div>
+          <div id="movieLengthDiv">
+            <p>Movie Length</p>
+            <div class="input">
+              <input
+                type="number"
+                id="movieLengthHour"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p>Hour's</p>
+              <input
+                type="number"
+                id="movieLengthMinute"
+                name="tentacles"
+                min="0"
+                max="59"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div id="previewLengthDiv">
-          <p>Preview Length</p>
-          <div class="input">
-            <!-- Fake input for space -->
-            <input
-              type="number"
-              class="fake"
-              id="fake"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p class="fake">Hour's</p>
-            <!-- Fake End-->
-            <input
-              type="number"
-              id="previewLengthMinute"
-              name="tentacles"
-              min="0"
-              max="59"
-              value="28"
-            />
-            <p>Minute's</p>
+        <div>
+          <div id="previewLengthDiv">
+            <p>Preview Length</p>
+            <div class="input">
+              <!-- Fake input for space -->
+              <input
+                type="number"
+                class="fake"
+                id="fake"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p class="fake">Hour's</p>
+              <!-- Fake End-->
+              <input
+                type="number"
+                id="previewLengthMinute"
+                name="tentacles"
+                min="0"
+                max="59"
+                value="28"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
+
+        <div id="endTimeOutput"></div>
+
+        <div class="btnDiv">
+          <button id="calculateButton">Calculate Movie End Time</button>
+        </div>
       </div>
-
-      <div id="endTimeOutput"></div>
-
-      <div>
-        <button id="calculateButton">Calculate Movie End Time</button>
-      </div>
-
       <!-- 2 -->
-      <div>
-        <div id="showTimeDiv2">
-          <input type="text" id="movieTitle2" placeholder="Movie Title" />
-          <p>Show Time</p>
-          <div class="input">
-            <input
-              type="number"
-              id="showTimeHour2"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p>Hour's</p>
-            <input
-              type="number"
-              id="showTimeMinute2"
-              name="tentacles"
-              min="0"
-              max="59"
-            />
-            <p>Minute's</p>
+      <div id="second">
+        <div>
+          <div id="showTimeDiv2">
+            <input type="text" id="movieTitle2" placeholder="Movie Title" />
+            <p>Show Time</p>
+            <div class="input">
+              <input
+                type="number"
+                id="showTimeHour2"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p>Hour's</p>
+              <input
+                type="number"
+                id="showTimeMinute2"
+                name="tentacles"
+                min="0"
+                max="59"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div id="movieLengthDiv">
-          <p>Movie Length</p>
-          <div class="input">
-            <input
-              type="number"
-              id="movieLengthHour2"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p>Hour's</p>
-            <input
-              type="number"
-              id="movieLengthMinute2"
-              name="tentacles"
-              min="0"
-              max="59"
-            />
-            <p>Minute's</p>
+        <div>
+          <div id="movieLengthDiv">
+            <p>Movie Length</p>
+            <div class="input">
+              <input
+                type="number"
+                id="movieLengthHour2"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p>Hour's</p>
+              <input
+                type="number"
+                id="movieLengthMinute2"
+                name="tentacles"
+                min="0"
+                max="59"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div id="previewLengthDiv2">
-          <p>Preview Length</p>
-          <div class="input">
-            <!-- Fake input for space -->
-            <input
-              type="number"
-              class="fake"
-              id="fake2"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p class="fake">Hour's</p>
-            <!-- Fake End-->
-            <input
-              type="number"
-              id="previewLengthMinute2"
-              name="tentacles"
-              min="0"
-              max="59"
-              value="28"
-            />
-            <p>Minute's</p>
+        <div>
+          <div id="previewLengthDiv2">
+            <p>Preview Length</p>
+            <div class="input">
+              <!-- Fake input for space -->
+              <input
+                type="number"
+                class="fake"
+                id="fake2"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p class="fake">Hour's</p>
+              <!-- Fake End-->
+              <input
+                type="number"
+                id="previewLengthMinute2"
+                name="tentacles"
+                min="0"
+                max="59"
+                value="28"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
+
+        <div id="endTimeOutput2"></div>
+
+        <div class="btnDiv">
+          <button id="calculateButton2">Calculate Movie End Time</button>
+        </div>
       </div>
-
-      <div id="endTimeOutput2"></div>
-
-      <div>
-        <button id="calculateButton2">Calculate Movie End Time</button>
-      </div>
-
       <!-- 2 -->
 
       <!-- 3 -->
-      <div>
-        <div id="showTimeDiv3">
-          <input type="text" id="movieTitle3" placeholder="Movie Title" />
-          <p>Show Time</p>
-          <div class="input">
-            <input
-              type="number"
-              id="showTimeHour3"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p>Hour's</p>
-            <input
-              type="number"
-              id="showTimeMinute3"
-              name="tentacles"
-              min="0"
-              max="59"
-            />
-            <p>Minute's</p>
+      <div id="third">
+        <div>
+          <div id="showTimeDiv3">
+            <input type="text" id="movieTitle3" placeholder="Movie Title" />
+            <p>Show Time</p>
+            <div class="input">
+              <input
+                type="number"
+                id="showTimeHour3"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p>Hour's</p>
+              <input
+                type="number"
+                id="showTimeMinute3"
+                name="tentacles"
+                min="0"
+                max="59"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div id="movieLengthDiv">
-          <p>Movie Length</p>
-          <div class="input">
-            <input
-              type="number"
-              id="movieLengthHour3"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p>Hour's</p>
-            <input
-              type="number"
-              id="movieLengthMinute3"
-              name="tentacles"
-              min="0"
-              max="59"
-            />
-            <p>Minute's</p>
+        <div>
+          <div id="movieLengthDiv">
+            <p>Movie Length</p>
+            <div class="input">
+              <input
+                type="number"
+                id="movieLengthHour3"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p>Hour's</p>
+              <input
+                type="number"
+                id="movieLengthMinute3"
+                name="tentacles"
+                min="0"
+                max="59"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div id="previewLengthDiv3">
-          <p>Preview Length</p>
-          <div class="input">
-            <!-- Fake input for space -->
-            <input
-              type="number"
-              class="fake"
-              id="fake2"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p class="fake">Hour's</p>
-            <!-- Fake End-->
-            <input
-              type="number"
-              id="previewLengthMinute3"
-              name="tentacles"
-              min="0"
-              max="59"
-              value="28"
-            />
-            <p>Minute's</p>
+        <div>
+          <div id="previewLengthDiv3">
+            <p>Preview Length</p>
+            <div class="input">
+              <!-- Fake input for space -->
+              <input
+                type="number"
+                class="fake"
+                id="fake2"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p class="fake">Hour's</p>
+              <!-- Fake End-->
+              <input
+                type="number"
+                id="previewLengthMinute3"
+                name="tentacles"
+                min="0"
+                max="59"
+                value="28"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
+
+        <div id="endTimeOutput3"></div>
+
+        <div class="btnDiv">
+          <button id="calculateButton3">Calculate Movie End Time</button>
+        </div>
       </div>
-
-      <div id="endTimeOutput3"></div>
-
-      <div>
-        <button id="calculateButton3">Calculate Movie End Time</button>
-      </div>
-
       <!-- 3 -->
 
       <!-- 4 -->
-      <div>
-        <div id="showTimeDiv4">
-          <input type="text" id="movieTitle4" placeholder="Movie Title" />
-          <p>Show Time</p>
-          <div class="input">
-            <input
-              type="number"
-              id="showTimeHour4"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p>Hour's</p>
-            <input
-              type="number"
-              id="showTimeMinute4"
-              name="tentacles"
-              min="0"
-              max="59"
-            />
-            <p>Minute's</p>
+      <div id="forth">
+        <div>
+          <div id="showTimeDiv4">
+            <input type="text" id="movieTitle4" placeholder="Movie Title" />
+            <p>Show Time</p>
+            <div class="input">
+              <input
+                type="number"
+                id="showTimeHour4"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p>Hour's</p>
+              <input
+                type="number"
+                id="showTimeMinute4"
+                name="tentacles"
+                min="0"
+                max="59"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div id="movieLengthDiv">
-          <p>Movie Length</p>
-          <div class="input">
-            <input
-              type="number"
-              id="movieLengthHour4"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p>Hour's</p>
-            <input
-              type="number"
-              id="movieLengthMinute4"
-              name="tentacles"
-              min="0"
-              max="59"
-            />
-            <p>Minute's</p>
+        <div>
+          <div id="movieLengthDiv">
+            <p>Movie Length</p>
+            <div class="input">
+              <input
+                type="number"
+                id="movieLengthHour4"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p>Hour's</p>
+              <input
+                type="number"
+                id="movieLengthMinute4"
+                name="tentacles"
+                min="0"
+                max="59"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div id="previewLengthDiv4">
-          <p>Preview Length</p>
-          <div class="input">
-            <!-- Fake input for space -->
-            <input
-              type="number"
-              class="fake"
-              id="fake4"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p class="fake">Hour's</p>
-            <!-- Fake End-->
-            <input
-              type="number"
-              id="previewLengthMinute4"
-              name="tentacles"
-              min="0"
-              max="59"
-              value="28"
-            />
-            <p>Minute's</p>
+        <div>
+          <div id="previewLengthDiv4">
+            <p>Preview Length</p>
+            <div class="input">
+              <!-- Fake input for space -->
+              <input
+                type="number"
+                class="fake"
+                id="fake4"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p class="fake">Hour's</p>
+              <!-- Fake End-->
+              <input
+                type="number"
+                id="previewLengthMinute4"
+                name="tentacles"
+                min="0"
+                max="59"
+                value="28"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div id="endTimeOutput4"></div>
+        <div id="endTimeOutput4"></div>
 
-      <div>
-        <button id="calculateButton4">Calculate Movie End Time</button>
+        <div class="btnDiv">
+          <button id="calculateButton4">Calculate Movie End Time</button>
+        </div>
       </div>
       <!-- 4 -->
 
       <!-- 5 -->
-      <div>
-        <div id="showTimeDiv5">
-          <input type="text" id="movieTitle5" placeholder="Movie Title" />
-          <p>Show Time</p>
-          <div class="input">
-            <input
-              type="number"
-              id="showTimeHour5"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p>Hour's</p>
-            <input
-              type="number"
-              id="showTimeMinute5"
-              name="tentacles"
-              min="0"
-              max="59"
-            />
-            <p>Minute's</p>
+      <div id="fifth">
+        <div>
+          <div id="showTimeDiv5">
+            <input type="text" id="movieTitle5" placeholder="Movie Title" />
+            <p>Show Time</p>
+            <div class="input">
+              <input
+                type="number"
+                id="showTimeHour5"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p>Hour's</p>
+              <input
+                type="number"
+                id="showTimeMinute5"
+                name="tentacles"
+                min="0"
+                max="59"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div id="movieLengthDiv">
-          <p>Movie Length</p>
-          <div class="input">
-            <input
-              type="number"
-              id="movieLengthHour5"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p>Hour's</p>
-            <input
-              type="number"
-              id="movieLengthMinute5"
-              name="tentacles"
-              min="0"
-              max="59"
-            />
-            <p>Minute's</p>
+        <div>
+          <div id="movieLengthDiv">
+            <p>Movie Length</p>
+            <div class="input">
+              <input
+                type="number"
+                id="movieLengthHour5"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p>Hour's</p>
+              <input
+                type="number"
+                id="movieLengthMinute5"
+                name="tentacles"
+                min="0"
+                max="59"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div id="previewLengthDiv5">
-          <p>Preview Length</p>
-          <div class="input">
-            <!-- Fake input for space -->
-            <input
-              type="number"
-              class="fake"
-              id="fake2"
-              name="tentacles"
-              min="1"
-              max="12"
-            />
-            <p class="fake">Hour's</p>
-            <!-- Fake End-->
-            <input
-              type="number"
-              id="previewLengthMinute5"
-              name="tentacles"
-              min="0"
-              max="59"
-              value="28"
-            />
-            <p>Minute's</p>
+        <div>
+          <div id="previewLengthDiv5">
+            <p>Preview Length</p>
+            <div class="input">
+              <!-- Fake input for space -->
+              <input
+                type="number"
+                class="fake"
+                id="fake2"
+                name="tentacles"
+                min="1"
+                max="12"
+              />
+              <p class="fake">Hour's</p>
+              <!-- Fake End-->
+              <input
+                type="number"
+                id="previewLengthMinute5"
+                name="tentacles"
+                min="0"
+                max="59"
+                value="28"
+              />
+              <p>Minute's</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div id="endTimeOutput5"></div>
+        <div id="endTimeOutput5"></div>
 
-      <div>
-        <button id="calculateButton5">Calculate Movie End Time</button>
+        <div class="btnDiv">
+          <button id="calculateButton5">Calculate Movie End Time</button>
+        </div>
       </div>
       <!-- 5 -->
     </div>
