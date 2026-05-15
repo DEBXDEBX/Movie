@@ -10,7 +10,8 @@
 /* Main Styling */
 html,
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Chelsea Market", cursive;
   line-height: 1.7em;
 }
 a {
@@ -79,11 +80,13 @@ input {
 #calculateButton3,
 #calculateButton4,
 #calculateButton5 {
+  font-family: "Chelsea Market", cursive;
   display: block;
   width: 100%;
   border: 2px solid white;
   /* background-color: #741cc5; */
   background-color: #503073;
+
   padding: 14px 28px;
   font-size: 25px;
   cursor: pointer;
@@ -157,4 +160,14 @@ input {
 
 .btnDiv {
   margin: 10px;
+}
+#pieBtn {
+  position: fixed;
+  bottom: 0px;
+  right: 15px;
+  transition: all 1s ease-out;
+}
+#pieBtn:hover {
+  transform: scale(3) translateX(-7px) translateY(-7px);
+  cursor: pointer;
 }

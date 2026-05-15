@@ -241,3 +241,8 @@ el.calculateButton5.addEventListener("click", (e) => {
     el.endTimeOutput5.innerHTML = `<p> ${str} ends at ${totalHours}:${totalMinutes}</p>`;
   }
 });
+
+el.pieBtn.addEventListener("click", (e) => {
+  btnAudio.play();
+  setTimeout(() => location.reload(), 950);
+});

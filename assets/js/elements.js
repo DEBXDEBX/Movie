@@ -44,5 +44,7 @@ class Elements {
     this.calculateButton5 = document.querySelector("#calculateButton5");
     this.endTimeOutput5 = document.querySelector("#endTimeOutput5");
     this.movieTitle5 = document.querySelector("#movieTitle5");
+
+    this.pieBtn = document.querySelector("#pieBtn");
   }
 }
