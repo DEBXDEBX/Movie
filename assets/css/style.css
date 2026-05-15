@@ -24,16 +24,14 @@ a {
 }
 /* use Variables */
 h1 {
-  color: var(--primary-color);
-  color: white;
+  color: blue;
   text-shadow: 2px 2px var(--secondary-color);
   text-align: center;
   margin-top: 25px;
 }
 html {
-  /* background-image: linear-gradient(to bottom, blue, rgb(83, 90, 164)); */
-  background-color: blue;
   height: 100%;
+  padding: 5px;
 }
 #showTimeDiv,
 #movieLengthDiv,
@@ -84,7 +82,8 @@ input {
   display: block;
   width: 100%;
   border: 2px solid white;
-  background-color: #741cc5;
+  /* background-color: #741cc5; */
+  background-color: #503073;
   padding: 14px 28px;
   font-size: 25px;
   cursor: pointer;
@@ -98,7 +97,7 @@ input {
 #calculateButton3:hover,
 #calculateButton4:hover,
 #calculateButton5:hover {
-  background-color: #503073;
+  background-color: blueviolet;
 }
 
 #endTimeOutput,
@@ -141,7 +140,8 @@ input {
   margin-bottom: 20px;
 }
 #forth {
-  background-color: #ee82ee;
+  /* background-color: #ee82ee; */
+  background-color: blue;
   border-radius: 10px;
   padding: 20px;
   margin-top: 20px;
